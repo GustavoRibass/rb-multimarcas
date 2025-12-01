@@ -1,0 +1,35 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="header">
+    <div class="container">
+        <div style="display:flex; align-items:center; gap:15px;">
+            <img src="img/logo.png" style="height:60px;">
+            <span style="font-size:22px; font-weight:bold;">RB MULTIMARCAS</span>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="estoque.html">Estoque</a>
+            <a href="contato.html">Contato</a>
+        <a href='quemsomos.html'>Quem Somos Nós</a></nav>
+    </div>
+</header>
+
+<section class="section">
+<h2>Contato</h2>
+<form onsubmit="return validar(event)">
+<input type="text" id="nome" class="form-control" placeholder="Nome" required>
+<input type="email" id="email" class="form-control" placeholder="Email" required>
+<input type="tel" id="telefone" class="form-control" placeholder="Telefone" required>
+<input type="text" id="carro" class="form-control" placeholder="Carro de interesse" required>
+<textarea id="mensagem" class="form-control" placeholder="Mensagem" required></textarea>
+<div style="display:flex; gap:15px;">
+        <button type="submit" class="btn">Enviar</button>
+        <button type="reset" class="btn" style="background:#666;color:#fff;">Redefinir</button>
+    </div>
+</form>
+</section>
+
+<footer class="footer">RB MULTIMARCAS © 2025</footer>
+<script src="js/validar.js"></script>
+</body></html>
